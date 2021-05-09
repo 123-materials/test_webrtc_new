@@ -5,49 +5,46 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="/static/style.css"/>
+  <script src="loginscript.js"></script>
 </head>
 
 <body id="LoginForm">
 <div class="container"><!-- container START-->
-<!-- first page Login UI START-->
-<div class="login-form">
+<div class="login-form"><!-- Signin page Login UI START -->
 <div class="main-div">
-    <div class="panel">
-   <h2>WebRTC App Login</h2>
-   <p>Please enter your unique username</p>
-   </div>
+  <div class="panel">
+      <h2>WebRTC Demo - video conference Application</h2>
+  </div>
     <form id="Login" onsubmit="return validateForm()">
-        <div class="form-group">
-            <input type="username" class="form-control" id="inputUsername" placeholder="User name">
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
+      <div class="form-group">
+        <p>Username</p> <input type="username" class="form-control" id="inputUsername" placeholder="Username">
+        <p>Password</p> <input type="password" class="form-control" id="inputpassword" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
     </form>
 </div>
-<p class="botto-text"> Designed by Engineering Semester</p>
-</div><!-- first page Login UI END -->
-<!-- second page video call UI START-->
-<div id="video-page">
-	<!-- video calling -->
-	<div id="call-page" class="page">
-		<video id="yours" autoplay></video>
-		<video id="theirs" autoplay></video>
-		Enter Peer Name: <input type="text" id="their-username" />
-		<button id="call">Call</button>
-		<button id="hang-up">Leave call</button>
-	</div>
-	<!-- text chat -->
-	<div id="text-chat">
-		<textarea id="message" rows="4" cols="50"> Enter text here...</textarea>
-		<button id="send">Send</button>
-		<div id="received"></div>
-		<br />
-		 <!--<div id="upload-status"></div>-->
-		  <output id="list"></output>
-		 <audio id="bflat" src="audio.mp3"></audio>
-	</div>
-</div><!-- second page video call UI END-->
-</div><!-- container END-->
-<script src="loginscript.js"></script>
-</body>
+<p class="botto-text"> Designed by <a href="http://engineeringsemester.com">Engineering Semester</a> </p>
+</div><!-- Signin page Login UI END -->
 
+
+<div class="login-form-signup"><!-- Signup page Login UI START -->
+<div class="main-div">
+    <form id="Login-signup" onsubmit="return validateForm()">
+      <div class="form-group">
+        <p>Username</p> <input type="username" class="form-control" id="inputUsername" placeholder="Username">
+        <p>New Password</p> <input type="password" class="form-control" id="inputpassword" placeholder="Password">
+        <p>Confirm Password</p> <input type="password" class="form-control" id="inputpassword" placeholder="Password">
+        <p>Email Id</p> <input type="password" class="form-control" id="inputpassword" placeholder="Email Id">
+      </div>
+      <button type="submit" class="btn btn-primary">Signup</button>
+    </form>
+</div>
+</div><!-- Signup page Login UI END -->
+
+</div><!-- container END-->
+<div class="bottom-link">
+<p class="botto-text"> Designed by <a href="http://engineeringsemester.com">Engineering Semester</a> </p>
+</div>
+
+</body>
 </html>
