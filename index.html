@@ -1,14 +1,53 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-  <button type="button" class="btn btn-primary" onclick="location.href='home.html'">Primary</button>   
+<head>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/style.css"/>
+</head>
+
+<body id="LoginForm">
+<div class="container"><!-- container START-->
+<!-- first page Login UI START-->
+<div class="login-form">
+<div class="main-div">
+    <div class="panel">
+   <h2>WebRTC App Login</h2>
+   <p>Please enter your unique username</p>
+   </div>
+    <form id="Login" onsubmit="return validateForm()">
+        <div class="form-group">
+            <input type="username" class="form-control" id="inputUsername" placeholder="User name">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+</div>
+<p class="botto-text"> Designed by Engineering Semester</p>
+</div><!-- first page Login UI END -->
+<!-- second page video call UI START-->
+<div id="video-page">
+	<!-- video calling -->
+	<div id="call-page" class="page">
+		<video id="yours" autoplay></video>
+		<video id="theirs" autoplay></video>
+		Enter Peer Name: <input type="text" id="their-username" />
+		<button id="call">Call</button>
+		<button id="hang-up">Leave call</button>
+	</div>
+	<!-- text chat -->
+	<div id="text-chat">
+		<textarea id="message" rows="4" cols="50"> Enter text here...</textarea>
+		<button id="send">Send</button>
+		<div id="received"></div>
+		<br />
+		 <!--<div id="upload-status"></div>-->
+		  <output id="list"></output>
+		 <audio id="bflat" src="audio.mp3"></audio>
+	</div>
+</div><!-- second page video call UI END-->
+</div><!-- container END-->
+<script src="loginscript.js"></script>
 </body>
+
 </html>

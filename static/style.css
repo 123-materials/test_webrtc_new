@@ -1,427 +1,46 @@
-@media only screen and (max-width : 540px){
-     .chat-sidebar{
-         display: none !important;
-    }
-     #page1-wrap{
-         display: none !important;
-    }
-     #video-page{
-         display: none !important;
-    }
+body#LoginForm{ background-color: #212529;background-repeat:no-repeat; background-position:center; background-size:cover; padding:10px;}
+
+.form-heading { color:#fff; font-size:23px;}
+.panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
+.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
+.login-form .form-control {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
 }
- .chat-sidebar{
-     width: 200px;
-     position: fixed;
-     height: 100%;
-     right: 0px;
-     top: 0px;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     border: 1px solid rgba(29, 49, 91, .3);
-}
- .sidebar-name{
-     padding-left: 10px;
-     padding-right: 10px;
-     margin-top : 0.8cm;
-     font-size: 20px;
-}
- html, body {
-     width: 100%;
-     height: 100%;
-     margin: 0;
-     padding: 0;
-}
- video {
-     background: black;
-     border: 1px solid gray;
-}
- .page {
-     width: 100%;
-     height: 100%;
-     position: relative;
-     display: block;
-     margin: 0 auto;
-     width: 500px;
-     height: 500px;
-}
- #yours {
-     width: 150px;
-     height: 150px;
-     position: absolute;
-     top: 15px;
-     right: 15px;
-}
- #contact-form{
-	 margin-top:20px;
- }
- #login{
-     border:1px solid;
-	 margin-top:20px;
-}
- #login:hover{
-     background-color: #555555;
-}
- #theirs {
-     width: 500px;
-     height: 500px;
-}
- #page1-wrap {
-     text-align: center;
-     margin-left:auto;
-     margin-right:auto;
-     background-color: #fff;
-     font-family: sans-serif;
-     color: black;
-}
- h3{
-     margin-bottom : 80px;
-}
- #received {
-     display: block;
-     width: 480px;
-     height: 100px;
-     background: white;
-     padding: 10px;
-     margin-top: 10px;
-     color: black;
-     overflow: scroll;
-}
- #video-page{
-     width: 100%;
-     height: 100%;
-}
- #call{
-     font-weight: bold;
-     border:1px solid;
-     margin-top :50px;
-     margin-left:10px;
-}
- #call:hover{
-     background-color: #f44336;
-}
- #hang-up{
-     font-weight: bold;
-     border:1px solid;
-     margin-top :50px;
-     margin-left:10px;
-}
- #hang-up:hover{
-     background-color: #f44336;
-}
- #their-username{
-     border:1px solid;
-     margin-top :50px;
-}
- #call-page{
-     border:1px solid #ccc;
-     float:left;
-}
- #text-chat{
-     border:1px solid #B51212;
-     float: right;
-     height:399px;
-     margin-right :350px;
-     margin-top:80px;
-}
- #message{
-     margin-left:22px;
-     border:1px solid ;
-     margin-top:22px;
-}
- #upfiles{
-     margin-left:22px;
-     margin-top:22px;
-     margin-bottom:22px;
-}
- #send{
-     font-weight: bold;
-     border:1px solid ;
-     margin-right:22px;
-     margin-left:22px;
-}
- #received{
-     border:1px solid ;
-     margin-right:22px;
-     margin-left:22px;
-     margin-bottom:52px;
-     margin-top:32px;
-}
- #upload-send{
-     border:1px solid ;
-     font-weight: bold;
-}
- #nickname{
-     float:left;
-     margin-left:40px;
-     font-size:12px;
-}
- #list{
-     display: inline;
-     width: 100%;
-     height: 100%;
-}
- #files {
-     margin-left: 30px;
-}
- #usercount{
-     margin-left : 1.5cm;
-     font-weight: bold;
+.main-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 2px;
+  margin: 10px auto 30px;
+  max-width: 38%;
+  padding: 50px 70px 70px 71px;
 }
 
-
-
-#custom-search-input {
-  background: #e8e6e7 none repeat scroll 0 0;
-  margin: 0;
-  padding: 10px;
+.login-form .form-group {
+  margin-bottom:10px;
 }
-   #custom-search-input .search-query {
-   background: #fff none repeat scroll 0 0 !important;
-   border-radius: 4px;
-   height: 33px;
-   margin-bottom: 0;
-   padding-left: 7px;
-   padding-right: 7px;
-   }
-   #custom-search-input button {
-   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-   border: 0 none;
-   border-radius: 3px;
-   color: #666666;
-   left: auto;
-   margin-bottom: 0;
-   margin-top: 7px;
-   padding: 2px 5px;
-   position: absolute;
-   right: 0;
-   z-index: 9999;
-   }
-   .search-query:focus + button {
-   z-index: 3;   
-   }
-   .all_conversation button {
-   background: #f5f3f3 none repeat scroll 0 0;
-   border: 1px solid #dddddd;
-   height: 38px;
-   text-align: left;
-   width: 100%;
-   }
-   .all_conversation i {
-   background: #e9e7e8 none repeat scroll 0 0;
-   border-radius: 100px;
-   color: #636363;
-   font-size: 17px;
-   height: 30px;
-   line-height: 30px;
-   text-align: center;
-   width: 30px;
-   }
-   .all_conversation .caret {
-   bottom: 0;
-   margin: auto;
-   position: absolute;
-   right: 15px;
-   top: 0;
-   }
-   .all_conversation .dropdown-menu {
-   background: #f5f3f3 none repeat scroll 0 0;
-   border-radius: 0;
-   margin-top: 0;
-   padding: 0;
-   width: 100%;
-   }
-   .all_conversation ul li {
-   border-bottom: 1px solid #dddddd;
-   line-height: normal;
-   width: 100%;
-   }
-   .all_conversation ul li a:hover {
-   background: #dddddd none repeat scroll 0 0;
-   color:#333;
-   }
-   .all_conversation ul li a {
-  color: #333;
-  line-height: 30px;
-  padding: 3px 20px;
-}
-   .member_list .chat-body {
-   margin-left: 47px;
-   margin-top: 0;
-   }
-   .top_nav {
-   overflow: visible;
-   }
-   .member_list .contact_sec {
-   margin-top: 3px;
-   }
-   .member_list li {
-   padding: 6px;
-   }
-   .chat-img img {
-   height: 34px;
-   width: 34px;
-   }
-   .member_list li {
-   border-bottom: 1px solid #dddddd;
-   padding: 6px;
-   }
-   .member_list li:last-child {
-   border-bottom:none;
-   }
-   .member_list {
-   height: 380px;
-   overflow-x: hidden;
-   overflow-y: auto;
-   }
-   .sub_menu_ {
-  background: #e8e6e7 none repeat scroll 0 0;
-  left: 100%;
-  max-width: 233px;
-  position: absolute;
+.login-form{ text-align:center;}
+.login-form  .btn.btn-primary {
+  background: #f0ad4e none repeat scroll 0 0;
+  border-color: #f0ad4e;
+  color: #ffffff;
+  font-size: 14px;
   width: 100%;
-}
-.sub_menu_ {
-  background: #f5f3f3 none repeat scroll 0 0;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  display: none;
-  left: 100%;
-  margin-left: 0;
-  max-width: 233px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.all_conversation ul li:hover .sub_menu_ {
-  display: block;
-}
-.new_message_head button {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: medium none;
-}
-.new_message_head {
-  background: #f5f3f3 none repeat scroll 0 0;
-  float: left;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 18px 10px;
-  width: 100%;
-}
-.message_section {
-  border: 1px solid #dddddd;
-}
-.chat_area {
-  float: left;
-  height: 300px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 100%;
-}
-.chat_area li {
-  padding: 14px 14px 0;
-}
-.chat_area li .chat-img1 img {
-  height: 40px;
-  width: 40px;
-}
-.chat_area .chat-body1 {
-  margin-left: 50px;
-}
-.chat-body1 p {
-  background: #fbf9fa none repeat scroll 0 0;
-  padding: 10px;
-}
-.chat_area .admin_chat .chat-body1 {
-  margin-left: 0;
-  margin-right: 50px;
-}
-.chat_area li:last-child {
-  padding-bottom: 10px;
-}
-.message_write {
-  background: #f5f3f3 none repeat scroll 0 0;
-  float: left;
-  padding: 15px;
-  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
 }
 
-.message_write textarea.form-control {
-  height: 70px;
-  padding: 10px;
+.botto-text {
+  color: #ffffff;
+  font-size: 14px;
+  margin: auto;
 }
-.chat_bottom {
-  float: left;
-  margin-top: 13px;
-  width: 100%;
+.login-form .btn.btn-primary.reset {
+  background: #ff9900 none repeat scroll 0 0;
 }
-.upload_btn {
-  color: #777777;
-}
-.sub_menu_ > li a, .sub_menu_ > li {
-  float: left;
-  width:100%;
-}
-.member_list li:hover {
-  background: #428bca none repeat scroll 0 0;
-  color: #fff;
-  cursor:pointer;
-}
-#main_entry{
-	float:right;
-}
-/**
- * JOIN
- */
-
-.loginpage__title {
-    line-height: 1.4;
-    text-align: center;
-}
-
-.loginpage__browser {
-    margin: 10px 0 0 0;
-    font-size: 14px;
-}
-
-.loginpage__body {
-    width: 90%;
-    max-width: 410px;
-    position: relative;
-    margin: 30px auto 0 auto;
-}
-
-.loginpage__row {
-    margin: 0 0 20px 0;
-}
-    .loginpage__row:last-child {
-        margin-bottom: 0;
-    }
-
-.loginpage__input,
-.login__btn {
-    display: block;
-    width: 100%;
-    height: 50px;
-
-    border-radius: 4px;
-
-    font-weight: 500;
-    line-height: 50px;
-
-    outline: none;
-    transition: all .4s ease;
-}
-    .loginpage__input {
-        padding: 0 0 0 15px;
-        border: solid 1px #d3d3d3;
-        background-color: #ffffff;
-        font-size: 17px;
-    }
-    .loginpage__input:focus {
-        border-color: #959595;
-    }
-    .login__btn {
-        background-color: #025fca;
-        color: #fff;
-
-        border: none;
-    }
+.back { text-align: left; margin-top:10px;}
+.back a {color: #444444; font-size: 13px;text-decoration: none;}
