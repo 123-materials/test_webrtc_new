@@ -1,78 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="static/style.css">
-<!------ Include the above in your HEAD tag ---------->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WebRTC - Dashboard</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" rel="stylesheet">
+	<link href="static/home_styles.css" rel="stylesheet">
+	<!--Custom Font-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 </head>
-<div class="container register">
-                <div class="row">
-                    <div class="col-md-3 register-left">
-                        <img src="https://i.ibb.co/r204YP1/Screen-Shot-2021-05-10-at-2-35-36-PM.png" alt=""/>
-                        <h3>Welcome</h3>
-                        <p>
-                        <h2>WebRTC Demo Video chat application</h2></p>
-                        <p>visit more @ <a href="http://engineeringsemester.com">engineering semester</a></p>
-                    </div>
-                    <div class="col-md-9 register-right">
-                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Signup</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <h3 class="register-heading">Login to your Account</h3>
-                                <div class="row register-form">
-                                    <div class="col-md-6">
-                                        <p class="font-weight-bold">User Name</p>
-                                        <p class="font-weight-bold">Password</p>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="form-group">
-                                          <input type="text" class="form-control" placeholder="Username *" value="" />
-                                      </div>
-                                      <div class="form-group">
-                                          <input type="password" class="form-control" placeholder="Password *" value="" />
-                                      </div>
-                                    </div>
-                                    <input type="submit" class="btnRegister"  value="Login"/>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <h3  class="register-heading">Create your New Account</h3>
-                                <div class="row register-form">
-                                    <div class="col-md-6">
-                                      <p class="font-weight-bold">Your Name</p>
-                                      <p class="font-weight-bold">Email Address</p>
-                                      <p class="font-weight-bold">Password</p>
-                                      <p class="font-weight-bold">Confirm Password</p>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="form-group">
-                                          <input type="text" class="form-control" placeholder="First Name *" value="" />
-                                      </div>
-                                      <div class="form-group">
-                                          <input type="email" class="form-control" placeholder="Email *" value="" />
-                                      </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Password *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
-                                        </div>
-                                    </div>
-                                    <input type="submit" class="btnRegister"  value="Register"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<body>
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
 
-            </div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="#"><span>WebRTC</span>Demo</a>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+
+
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<div class="profile-sidebar">
+			<div class="profile-userpic">
+				<img src="" class="img-responsive" alt="">
+			</div>
+			<div class="profile-usertitle">
+				<div class="profile-usertitle-name">Username</div>
+				<div class="profile-usertitle-status"><span class="indicator label-success"></span>Online</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="divider"></div>
+
+
+ 		 <ol class="breadcrumb">
+ 			 <li class="active">Online Users</li>
+ 		 </ol>
+
+
+
+		<ul class="nav menu">
+			<li><a href="#"> <span class="indicator label-success"></span>Widgets</a></li>
+			<li><a href="#"> <span class="indicator label-success"></span> Widgets</a></li>
+			<li><a href="#"> <span class="indicator label-success"></span>Widgets</a></li>
+			<li><a href="#"> <span class="indicator label-success"></span>Widgets</a></li>
+			<li><a href="#"> <span class="indicator label-success"></span>Widgets</a></li>
+			<li><a href="#"> <span class="indicator label-success"></span>Logout</a></li>
+		</ul>
+	</div><!--/.sidebar-->
+
+
+
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li class="active">Dashboard</li>
+			</ol>
+		</div><!--/.row-->
+
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Welcome !!!</h1>
+			</div>
+		</div><!--/.row-->
+
+
+
+
+		<div class="panel panel-container">
+			<div class="row">
+				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-teal panel-widget border-right">
+						<div class="row no-padding"><em class="fa fa-xl "></em>
+							<div class="large">120</div>
+							<div class="text-muted">New Orders</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-blue panel-widget border-right">
+						<div class="row no-padding"><em class="fa fa-xl "></em>
+							<div class="large">52</div>
+							<div class="text-muted">Comments</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-orange panel-widget border-right">
+						<div class="row no-padding"><em class="fa fa-xl "></em>
+							<div class="large">24</div>
+							<div class="text-muted">New Users</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
+					<div class="panel panel-red panel-widget ">
+						<div class="row no-padding"><em class="fa fa-xl "></em>
+							<div class="large">25.2k</div>
+							<div class="text-muted">Page Views</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.row-->
+		</div>
+
+
+
+
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="panel panel-default chat">
+					<div class="panel-heading">
+						Chat
+						</div>
+					<div class="panel-body">
+						<!-- type your message here -->
+						<!-- type your message here -->
+						<!-- type your message here -->
+						<!-- type your message here -->
+						<!-- type your message here -->
+					</div>
+				</div>
+			</div><!--/.col-->
+
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default chat">
+						<div class="panel-heading">
+							Chat
+							</div>
+						<div class="panel-body">
+							<!-- type your message here -->
+							<!-- type your message here -->
+							<!-- type your message here -->
+							<!-- type your message here -->
+							<!-- type your message here -->
+						</div>
+					</div>
+				</div><!--/.col-->
+
+			<div class="col-sm-12">
+				<p class="back-link">Designed by <a href="#">Engineering Semester</a></p>
+			</div>
+		</div><!--/.row-->
+
+
+	</div>	<!--/.main-->
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
 </html>
