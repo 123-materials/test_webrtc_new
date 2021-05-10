@@ -1,50 +1,78 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="static/style.css"/>
-  <script src="loginscript.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<!------ Include the above in your HEAD tag ---------->
 </head>
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://i.ibb.co/r204YP1/Screen-Shot-2021-05-10-at-2-35-36-PM.png" alt=""/>
+                        <h3>Welcome</h3>
+                        <p>
+                        <h2>WebRTC Demo Video chat application</h2></p>
+                        <p>visit more @ <a href="http://engineeringsemester.com">engineering semester</a></p>
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Signup</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Login to your Account</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <p class="font-weight-bold">User Name</p>
+                                        <p class="font-weight-bold">Password</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <input type="text" class="form-control" placeholder="Username *" value="" />
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="password" class="form-control" placeholder="Password *" value="" />
+                                      </div>
+                                    </div>
+                                    <input type="submit" class="btnRegister"  value="Login"/>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3  class="register-heading">Create your New Account</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                      <p class="font-weight-bold">Your Name</p>
+                                      <p class="font-weight-bold">Email Address</p>
+                                      <p class="font-weight-bold">Password</p>
+                                      <p class="font-weight-bold">Confirm Password</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                          <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="email" class="form-control" placeholder="Email *" value="" />
+                                      </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                                        </div>
+                                    </div>
+                                    <input type="submit" class="btnRegister"  value="Register"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<body id="LoginForm">
-<div class="container"><!-- container START-->
-<div class="login-form"><!-- Signin page Login UI START -->
-<div class="main-div">
-  <div class="panel">
-      <h2>WebRTC Demo - video conference Application</h2>
-  </div>
-    <form id="Login" onsubmit="return validateForm()">
-      <div class="form-group">
-        <p>Username</p> <input type="username" class="form-control" id="inputUsername" placeholder="Username">
-        <p>Password</p> <input type="password" class="form-control" id="inputpassword" placeholder="Password">
-      </div>
-      <button type="submit" class="btn btn-primary">Login</button>
-    </form>
-</div>
-<p class="botto-text"> Designed by <a href="http://engineeringsemester.com">Engineering Semester</a> </p>
-</div><!-- Signin page Login UI END -->
-
-
-<div class="login-form-signup"><!-- Signup page Login UI START -->
-<div class="main-div">
-    <form id="Login-signup" onsubmit="return validateForm()">
-      <div class="form-group">
-        <p>Username</p> <input type="username" class="form-control" id="inputUsername" placeholder="Username">
-        <p>New Password</p> <input type="password" class="form-control" id="inputpassword" placeholder="Password">
-        <p>Confirm Password</p> <input type="password" class="form-control" id="inputpassword" placeholder="Password">
-        <p>Email Id</p> <input type="password" class="form-control" id="inputpassword" placeholder="Email Id">
-      </div>
-      <button type="submit" class="btn btn-primary">Signup</button>
-    </form>
-</div>
-</div><!-- Signup page Login UI END -->
-
-</div><!-- container END-->
-<div class="bottom-link">
-<p class="botto-text"> Designed by <a href="http://engineeringsemester.com">Engineering Semester</a> </p>
-</div>
-
-</body>
+            </div>
 </html>
