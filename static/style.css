@@ -58,7 +58,6 @@
     background: #0062cc;
     color: #fff;
     font-weight: 600;
-    width: 20%;
     cursor: pointer;
 }
 .register .nav-tabs{
@@ -81,7 +80,6 @@
     border: none;
 }
 .register .nav-tabs .nav-link.active{
-    width: 100px;
     color: #0062cc;
     border: 2px solid #0062cc;
     border-top-left-radius: 1.5rem;
@@ -99,4 +97,36 @@ p {
 }
 a:hover {
   color: inherit;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+    .register-right{
+    border-top-left-radius: 0% 50%;
+    border-bottom-left-radius: 0% 50%;
+}
+}
+
+@media (min-width: 576px) {
+  :root {
+    --size-divisor: 2;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --size-divisor: 1.5;
+  }
+}
+@media (min-width: 992px) { 
+  :root {
+    --size-divisor: 1;
+  }
+}
+@media (min-width: 1200px) { 
+  :root {
+    --size-divisor: .67;
+  }
 }
