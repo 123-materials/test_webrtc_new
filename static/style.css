@@ -81,7 +81,6 @@
     border: none;
 }
 .register .nav-tabs .nav-link.active{
-    width: 100px;
     color: #0062cc;
     border: 2px solid #0062cc;
     border-top-left-radius: 1.5rem;
@@ -106,4 +105,8 @@ a:hover {
   .left, .main, .right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
+    .register-right{
+    border-top-left-radius: 0% 50%;
+    border-bottom-left-radius: 0% 50%;
+}
 }
